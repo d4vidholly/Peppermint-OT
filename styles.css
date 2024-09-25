@@ -151,7 +151,7 @@ p b {
 
 
 
-.welcome-section  {
+.welcome  {
   margin-top: 50px;
 }
 
@@ -366,7 +366,7 @@ center {
  
 /* mobile styles */
 
-.welcome-section, .about-section  {
+.welcome, .about-section  {
   display: block;
 }
 
@@ -394,7 +394,7 @@ center {
   }
 
 
-.welcome-section, .about-section, .services-section  {
+.welcome, .about-section, .services-section  {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-left: 100px;
