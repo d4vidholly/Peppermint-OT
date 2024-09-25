@@ -114,11 +114,11 @@ nav ul li a {
 
 .text-container h2, h3  {
   font-size: 1.25em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .text-container h4  {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 500;
   text-decoration: none;
 }
