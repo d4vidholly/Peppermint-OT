@@ -8,12 +8,13 @@
 }
 
 :root {
-  --main-color: #1EA492;
-  --accent-color: #26CFB8;
+  --main-color: #2E7F7A;
+  --accent-color: #7FD0C9;
   --text-color: #333333;
-  --text-color-highlight: #E8F5F4 ; 
+  --test-color: 	#23605b; 
+  --text-color-highlight: #ACECE3 ; 
   --light-color: white;
-  --background-color: #D3F5F0;
+  --background-color: #ACECE3;
 }
 
 body  {
@@ -117,17 +118,17 @@ nav ul li a {
 }
 
 .text-container h4  {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   text-decoration: none;
 }
 
 .text-container p {
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .text-container li {
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .text-container ul  {
@@ -136,16 +137,16 @@ nav ul li a {
 }
 
 a {
-  color: #1EA492;
+  color: var(--main-color);
   text-decoration: underline;
 }
 
 ul li b {
-  color: #1EA492;
+  color: var(--main-color);
 }
 
 p b {
-  color: #1EA492;
+  color: var(--main-color);
 }
 
 
@@ -175,7 +176,7 @@ p b {
 
 
 .pin  {
-  color: #1A9282;
+  color: var(--main-color);
 }
 
 .image-container-one  {
@@ -183,7 +184,7 @@ p b {
   margin: auto;
   align-items: center;
   justify-content: center;
-  background-color: var(--accent-color);
+  background-color: var(--background-color);
   width: 100%;
   height: 240px;
 
