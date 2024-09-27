@@ -109,12 +109,14 @@ nav ul li a {
 
 .text-container h1  {
   color: var(--main-color);
-  font-size: 1.5em;
+  font-size: 2em;
+  line-height: 1.2;
 }
 
 .text-container h2, h3  {
   font-size: 1.25em;
   font-weight: 500;
+  line-height: 1.4;
 }
 
 .text-container h4  {
@@ -125,10 +127,12 @@ nav ul li a {
 
 .text-container p {
   font-size: 1em;
+  line-height: 1.4;
 }
 
 .text-container li {
   font-size: 1em;
+  line-height: 1.4;
 }
 
 .text-container ul  {
