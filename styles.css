@@ -379,6 +379,14 @@ center {
   margin: auto;
 }
 
+.left-column-card {
+  margin: 20px;
+  padding: 0;
+  border-radius: 20px;
+  background-color: var(--background-color)
+
+}
+
 #nav-list {
   display: none;
 }
@@ -463,6 +471,11 @@ center {
 
 .hidden-column  {
   display: block;
+}
+
+.left-column-card {
+  margin: auto;
+  max-width: 450px ;
 }
 
 .left-column  {
