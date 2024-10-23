@@ -281,6 +281,16 @@ margin: 40px;
   width: 70%;
 }
 
+.quote {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.checklist  {
+  max-height: 90%;
+}
+
 
 .box  {
   height: 200px;
