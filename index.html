@@ -29,7 +29,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;1,300;1,400&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
@@ -84,8 +84,10 @@
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="nav-contact-item"><a href="#contact">Contact</a></li>
         </ul>
+
+        <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </header>
 
@@ -103,9 +105,8 @@
         <div class="right-column">
           <div class="welcome-text">
             <div class="text-container">
-              <h1>Occupational Therapy, Wherever You Are in Australia</h1>
-              <p class="tagline">Clarity, wherever you are.</p>
-              <p class="hero-intro">Specialist NDIS OT services for children and young people — clear assessments, straightforward reports, and a process that makes referrals easy.</p>
+              <h1>Clarity, through Occupational Therapy wherever you are.</h1>
+              <p class="hero-intro">Specialist NDIS OT for children and young people.</p>
               <ul class="home-list">
                 <li>Functional Capacity Assessments — reports in 10 business days</li>
                 <li>Practice Supervision for new graduates and overseas qualified OTs</li>
@@ -186,15 +187,32 @@
             </li>
           </ol>
 
-          <div class="callout fifo-note">
-            <p><b>Available for FIFO Contracts</b> — PeppermintOT is available for fly-in fly-out therapy contracts. Get in touch to discuss scheduling and arrangements.</p>
-          </div>
-
           <div class="callout pricing-note">
             <p><b>Plan Managed and Self Managed participants only.</b> PeppermintOT is an unregistered NDIS provider. Services are charged at $193.99/hr in line with the NDIS Price Guide.</p>
           </div>
 
-          <p class="supervision-note">We also offer <b>Practice Supervision</b> for new graduates and overseas qualified OTs working toward full AHPRA registration. Get in touch for more information and pricing.</p>
+          <p class="supervision-note">We also offer Practice Supervision and FIFO contracts — see below.</p>
+        </div>
+      </section>
+
+      <!-- Other Services -->
+      <section class="other-services-section" id="other-services">
+        <div class="section-inner">
+          <h2>Other Services</h2>
+          <p class="services-intro">Beyond FCAs, PeppermintOT offers two additional engagements.</p>
+          <div class="service-cards">
+
+            <div class="service-card">
+              <h3>FIFO Therapy Contracts</h3>
+              <p>PeppermintOT is available for fly-in fly-out therapy contracts. If your organisation needs consistent OT support at remote or regional sites, get in touch to discuss scheduling and arrangements.</p>
+            </div>
+
+            <div class="service-card">
+              <h3>Practice Supervision</h3>
+              <p>1:1 supervision for new graduates and overseas qualified occupational therapists working toward full AHPRA registration. Sessions are practical, supportive, and tailored to where you are in your registration journey. Get in touch for pricing and availability.</p>
+            </div>
+
+          </div>
         </div>
       </section>
 
@@ -298,14 +316,6 @@
 
       <!-- Contact -->
       <section class="contact" id="contact">
-        <div class="contact-info">
-          <div class="location">
-            <img class="icon" src="mail.svg" alt="" width="30" height="30" aria-hidden="true">
-            <p class="email"><a href="mailto:hello@peppermintot.com">hello@peppermintot.com</a></p>
-          </div>
-          <p>Have a client who could benefit from an FCA or OT support? Get in touch — we're happy to have a quick conversation before you commit to a referral.</p>
-          <p>We aim to respond to all enquiries within 5 business days.</p>
-        </div>
 
         <div class="aoc-block">
           <!-- Dot-art inspired decorative motif: concentric circles (meeting places/waterholes) connected by dotted tracks -->
@@ -358,16 +368,24 @@
           <p class="acknowledgement">PeppermintOT acknowledges the traditional custodians of the lands on which we work, live and learn, and pay our respects to them, their culture and their elders, past, present and emerging. We recognise the enduring connection that Aboriginal and Torres Strait Islander peoples have to this land and acknowledge their unique contributions to its history and culture.</p>
         </div>
 
+        <div class="contact-info">
+          <h2 class="contact-heading">Ready to make a referral?</h2>
+          <p class="contact-sub">Have a client who could benefit from an FCA or OT support? Happy to have a quick conversation before you commit.</p>
+          <a href="https://peppermintot.splose.com/public-form/03abdc5f-cfff-476c-bbad-d462489cb75a" class="enquire-btn enquire-btn--outline" rel="noopener noreferrer" target="_blank">Enquire Today!</a>
+          <p class="contact-response">We aim to respond to all enquiries within 5 business days.</p>
+        </div>
+
         <div class="foot"></div>
       </section>
 
     </main>
 
-    <footer>
+    <footer class="site-footer">
+      <p>Peppermint Occupational Therapy 2026. Website designed by <a href="https://davidhollydesign.com/" rel="noopener noreferrer" target="_blank">David Holly Design</a></p>
+    </footer>
+
+    <footer class="sticky-cta">
       <a href="https://peppermintot.splose.com/public-form/03abdc5f-cfff-476c-bbad-d462489cb75a" class="enquire-btn" rel="noopener noreferrer" target="_blank">Enquire Today!</a>
-      <div class="footnotes">
-        <p>Peppermint Occupational Therapy 2026.<br>Website designed by <a href="https://davidhollydesign.com/" rel="noopener noreferrer" target="_blank">David Holly Design</a></p>
-      </div>
     </footer>
 
     <script>
@@ -388,6 +406,16 @@
           toggle.setAttribute('aria-label', 'Open navigation menu');
         });
       });
+
+      // Hide sticky CTA when the contact email section is in view
+      var stickyCta = document.querySelector('footer.sticky-cta');
+      var contactInfo = document.querySelector('.contact-info');
+      if (stickyCta && contactInfo) {
+        var ctaObserver = new IntersectionObserver(function(entries) {
+          stickyCta.classList.toggle('cta-hidden', entries[0].isIntersecting);
+        }, { threshold: 0.15 });
+        ctaObserver.observe(contactInfo);
+      }
 
       // FAQ accordion
       document.querySelectorAll('.faq-question').forEach(function (btn) {
